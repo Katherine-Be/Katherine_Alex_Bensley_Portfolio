@@ -1,4 +1,5 @@
 #navbar {
+    display: block;
     float: left; /* allows navbar to remain along the left side while scrolling*/
     width: 10%;
     min-width: 70px;
@@ -41,4 +42,10 @@ header img{
     margin-left: auto;
     margin-right: auto;
 
+}
+
+#My_Work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
