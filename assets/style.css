@@ -1,0 +1,44 @@
+#navbar {
+    float: left; /* allows navbar to remain along the left side while scrolling*/
+    width: 10%;
+    min-width: 70px;
+    height:100vh;
+    position: sticky;
+    background-color: green;
+    color: white;
+}
+
+#navbar li {
+    margin: 4px;
+    border: solid 2px white;
+
+}
+
+a {
+    padding: 2px;
+}
+
+#content {
+    padding-top: 20px;
+    background: conic-gradient(black, green);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header * {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: auto;
+}
+
+header img{
+    height: 400px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
