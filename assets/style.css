@@ -1,22 +1,45 @@
 body {
+    display: block;
     background: conic-gradient(green, black);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #navbar {
     display: block;
     float: left; /* allows navbar to remain along the left side while scrolling*/
-    width: 12%;
-    min-width: 70px;
+    /* width: 12%; */
+    min-width: fit-content;
     height: 100vh;
-    position: sticky;
-    top: 0; 
-    color: white;    
+    position: fixed; 
+    color: white;
+    z-index: 1;
 }
+
+@media only screen and (max-width: 835px) {
+#navbar {
+    margin-top: 80%;
+}
+}
+
 
 #navbar li {
     margin: 20px 10px;
-    border: solid 2px white;
+    border: solid 2px green;
+    background: green;
+    border-radius: 10% 0 0 10%;
     font-size: 135%;
+    font-weight: bold;
+}
+
+#navbar ul li:first-child {
+    border-radius: 100%;
+    width:fit-content;
+    font-size: 300%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 a {
@@ -28,6 +51,7 @@ a {
     color:white;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     min-height: 100vh;
 
 }
@@ -41,14 +65,13 @@ header * {
 }
 
 header img{
-    height: 400px;
-    min-width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-#My_Work {
+#projects {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -65,7 +88,7 @@ header img{
 
 }
 
-#My_Work img {
+#projects img {
     justify-content: space-around;
     object-fit: cover;
     width:300px;
