@@ -80,16 +80,15 @@ header img{
 
 }
 
-.myProjects {
-    border: 10px solid white;
-    border-radius: 10%;  
+.myProjects { 
     margin: 10px;
     position: relative; /*Readme>Resources>FigCaption*/
 
 }
 
 #projects img {
-    justify-content: space-around;
+    border: 10px solid white;
+    border-radius: 10%; 
     object-fit: cover;
     width:300px;
     height:40vh;
@@ -103,4 +102,19 @@ figcaption {
     color: black;
     font-weight: bold;
     border-radius: 5%;
+    margin-left: 10px;
 }
+
+#About_Me {
+    font-size: 160%;
+    font-weight: bold;
+    margin-left: 15vh;
+    border-bottom: solid black 2px;
+}
+
+#about h1 {
+    margin:  10px 15vh 10px 15vh;
+    font-size: 120%;
+}
+
+
