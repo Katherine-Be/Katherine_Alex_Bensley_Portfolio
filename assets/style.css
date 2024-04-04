@@ -64,12 +64,34 @@ header * {
     margin-bottom: 30px;
 }
 
-header img{
+header img {
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+#leaf img {
+    display: block;
+    position: relative;
+    z-index: -1; /*sends img to back*/
+    height: 70vh;
+    width: 110%;
+    top: -450px;
+    margin-bottom: -300px;
+    rotate: 221deg;
+}
+
+@media only screen and (max-width: 925px) {
+    #leaf img {
+        top: -550px;
+        left: 150px;
+        object-position: static;
+        width:100%;
+        height: 70%;
+    }
+    }
 
 #projects {
     display: flex;
