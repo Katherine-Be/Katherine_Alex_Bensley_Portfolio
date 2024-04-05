@@ -5,12 +5,32 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0;
+    position: relative; 
+}
+
+#floater {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Move floater behind other content */
+    overflow: hidden; /* Hide overflow to prevent video from extending beyond viewport */
+}
+
+#floater video {
+    position: absolute;
+    top: 50%; /* Center video vertically */
+    left: 50%; /* Center video horizontally */
+    transform: translate(-18%, -70%); /* Center video properly */
+    min-width: 100%; /* Ensure video covers entire viewport */
+    min-height: 100%;
 }
 
 #navbar {
     display: block;
     float: left; /* allows navbar to remain along the left side while scrolling*/
-    /* width: 12%; */
     min-width: fit-content;
     height: 100vh;
     position: fixed; 
@@ -53,7 +73,11 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
+    overflow: hidden;
+}
 
+header{
+    margin-top: 80px;
 }
 
 header * {
