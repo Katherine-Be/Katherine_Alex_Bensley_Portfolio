@@ -92,6 +92,7 @@ header img {
     height: 300px;
     width: 300px;
     object-fit: cover;
+    border: solid 8px rgb(133, 36, 12);
     border-radius: 50%;
 }
 
@@ -138,7 +139,7 @@ section article:hover {
 }
 
 #projects img {
-    border: 10px solid white;
+    border: 10px solid rgb(133, 36, 12);
     border-radius: 10%; 
     object-fit: cover;
     width:300px;
