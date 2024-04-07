@@ -130,7 +130,9 @@ header img {
 .myProjects { 
     margin: 10px;
     position: relative; /*Readme>Resources>FigCaption*/
-
+    height: fit-content;
+    border: solid -10px transparent;
+    border-radius: 10%;
 }
 
 section article:hover {
@@ -162,6 +164,7 @@ figcaption {
     font-weight: bold;
     border-radius: 5%;
     margin-left: 10px;
+    ;
 }
 
 #About_Me {
