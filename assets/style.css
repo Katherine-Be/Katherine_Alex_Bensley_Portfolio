@@ -164,7 +164,7 @@ figcaption {
     font-weight: bold;
     border-radius: 5%;
     margin-left: 10px;
-    ;
+    width: fit-content;
 }
 
 #About_Me {
